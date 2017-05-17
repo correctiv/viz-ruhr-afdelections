@@ -1,0 +1,16 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+// base components alignement
+@import './components.scss';
+
+// components
+@import './section.scss';
+@import './figure_credits.scss';
+@import '../components/map/map.scss';
+@import '../components/districts/districts.scss';
+@import '../components/infobox/infobox.scss';
+@import '../components/legend/legend.scss';
+
+// FIXME
+// @import './legacy.scss';

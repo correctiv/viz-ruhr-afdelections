@@ -1,0 +1,101 @@
+@import './election-result.scss';
+
+.nrwelmaps__infobox {
+
+  border: 1px solid black;
+  padding: 20px;
+  padding-bottom: 70px;
+  background-color: rgba(255, 255, 255, .95);
+
+  @include bp-xs {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $screen-sm - 1) {  // FIXME mobile first??
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+
+  &-title {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @include hide-bigger;
+  }
+
+  &__map-symbol {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  dl {
+    display: block;
+    margin-bottom: 0;
+
+    @include bp-xs {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  dt {
+    padding-top: .7em;
+    font-size: 20px;
+    line-height: 1em;
+    font-family: $font-neuzeit;
+    font-weight: bold;
+  }
+
+  dd {
+    font-weight: normal;
+    line-height: 1em;
+
+    @include bp-sm {
+      font-size: 14px;
+    }
+
+    .annotation {
+      color: $gray-dark;
+      font-style: italic;
+      font-size: 16px;
+
+      @include bp-sm {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__annotation {
+    display: block;
+    color: $gray;
+    font-style: italic;
+    font-size: 14px;
+    margin-right: 60px;
+    margin-top: 20px;
+
+    @include bp-sm {
+      font-size: 12px;
+      // position: absolute;
+      // bottom: 20px;
+    }
+  }
+
+  &__hint {
+    font-size: 15px;
+    @include hide-small;
+  }
+
+}

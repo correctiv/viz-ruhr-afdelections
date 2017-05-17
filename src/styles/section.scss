@@ -1,0 +1,7 @@
+.nrwelmaps__section {
+  padding-top: 10px;
+
+  @include bp-sm {
+    padding-top: 20px;
+  }
+}

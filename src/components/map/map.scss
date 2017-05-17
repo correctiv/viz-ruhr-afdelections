@@ -1,0 +1,32 @@
+.nrwelmaps__map {
+
+  &-container {
+    clear: both;
+    padding-top: 50px;
+
+    @include bp-sm {
+      padding-top: 270px;
+    }
+
+    @include bp-xs {
+      width: 70%;
+      max-width: 400px;
+    }
+
+    @include bp-sm {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  &-path {
+    stroke: $map-stroke;
+    stroke-width: $map-stroke-width;
+
+    &.-hilight {
+      stroke: $map-stroke-hilight;
+      stroke-width: $map-stroke-hilight-width;
+    }
+  }
+
+}

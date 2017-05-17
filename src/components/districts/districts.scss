@@ -1,0 +1,118 @@
+.nrwelmaps {
+
+  &__districts-group {
+    display: block;
+    width: 100%;
+
+    @include bp-xs {
+      width: 50%;
+      float: left;
+    }
+
+    &-title {
+      margin-top: 0;
+      font-size: 16px;
+    }
+  }
+
+  &__district-container {
+    z-index: 5;
+    position: relative;
+    // clear: both;
+    display: block;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+
+    @include bp-xs {
+      width: 95%;
+      margin-right: 5%;
+    }
+
+    @include bp-sm {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    @include bp-lg {
+      width: 40%;
+      float: left;
+    }
+
+    &--active {
+      background-color: $gray-lighter;
+      // border: 1px solid $gray;
+
+      path {
+        stroke: $map-stroke-hilight;
+        stroke-width: $map-stroke-hilight-width;
+      }
+    }
+  }
+
+  &__district {
+
+    &__collapse-btn {
+      position: absolute;
+      top: 10px;
+      right: 5px;
+      background-color: $gray-light;
+
+      &--active, &:hover, &:focus {
+        color: $white;
+        background-color: $gray;
+      }
+
+      @include hide-bigger;
+    }
+
+    &__name {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      line-height: 14px;
+      margin-left: 35px;
+      white-space: nowrap;
+
+      @include bp-sm {
+        line-height: 18px;
+        margin-left: 40px;
+      }
+
+      @include bp-lg {
+        margin-left: 0px;
+      }
+    }
+
+    &__inline-data {
+      font-size: 12px;
+      margin-left: 35px;
+      line-height: 1;
+
+      @include bp-sm {
+        font-size: 14px;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__district-map {
+
+    &__container {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+
+      @include bp-xs {
+        left: 5px;
+      }
+
+      @include bp-lg {
+        top: 30px;
+      }
+    }
+
+  }
+
+}

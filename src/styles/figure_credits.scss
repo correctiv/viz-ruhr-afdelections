@@ -1,0 +1,23 @@
+.figure__credits {
+  clear: both;
+  padding-top: 20px;
+  color: #9c9c9c;
+  font-size: 14px;
+  line-height: 1.4;
+
+  a {
+    border: none;
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  &>p:first-of-type:before {
+    // remove icon
+    content: '';
+    padding: 0;
+  }
+
+  @include bp-lg {
+    padding-top: 60px;
+  }
+}
