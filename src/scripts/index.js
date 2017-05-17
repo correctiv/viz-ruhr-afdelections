@@ -20,3 +20,5 @@ const data = loadData(config.map)
 
 import '../components/app.tag'
 riot.mount('[data-riot-mount="nrwelmaps__app"]', 'nrwelmaps-app', {config, data})
+
+import './render_comparisons.js'

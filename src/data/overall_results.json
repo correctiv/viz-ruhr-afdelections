@@ -1,0 +1,60 @@
+{
+  "rvr": {
+    "2012": {
+      "spd": 47.4,
+      "cdu": 20,
+      "fdp": 8.4,
+      "gruene": 10.4,
+      "linke": 3,
+      "sonstige": 11.1
+    },
+    "2017": {
+      "spd": 36.5,
+      "cdu": 27.1,
+      "fdp": 10.6,
+      "afd": 9.5,
+      "gruene": 5.5,
+      "linke": 5.4,
+      "sonstige": 5.6
+    }
+  },
+  "nrw": {
+    "2012": {
+      "spd": 39.1,
+      "cdu": 26.3,
+      "fdp": 8.6,
+      "gruene": 11.3,
+      "linke": 2.5,
+      "sonstige": 8.2
+    },
+    "2017": {
+      "spd": 31.2,
+      "cdu": 33,
+      "fdp": 12.6,
+      "gruene": 6.4,
+      "linke": 4.9,
+      "afd": 7.4,
+      "sonstige": 4.7
+    }
+  },
+  "colors": {
+    "spd": "#ff0d0d",
+    "cdu": "black",
+    "gruene": "#11bf11",
+    "fdp": "#ffe70c",
+    "linke": "#d50c70",
+    "afd": "steelblue",
+    "piraten": "#ff6f10",
+    "sonstige": "gray"
+  },
+  "parties": {
+    "spd": "SPD",
+    "cdu": "CDU",
+    "gruene": "Grüne",
+    "fdp": "FDP",
+    "linke": "Die Linke",
+    "afd": "AfD",
+    "piraten": "Piraten",
+    "sonstige": "Sonstige"
+  }
+}
