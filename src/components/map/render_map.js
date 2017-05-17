@@ -6,7 +6,10 @@ export default ({
 }) => {
   const {topoLayerName, width, height} = config
   const path = d3.geoPath().projection(d3.geoMercator().fitSize([width, height], data))
-  return d3.select('[data-d3="d3-map"]').append('svg')
+  const element = d3.select('[data-d3="d3-map"]')
+  element.append('h4')
+    .text('So hat NRW die AfD gewählt')
+  return element.append('svg')
       .attr('preserveAspectRatio', 'xMinYMin meet')
       .attr('viewBox', '0 0 ' + width + ' ' + height)
       .attr('class', 'nrwelmaps__map-svg')
