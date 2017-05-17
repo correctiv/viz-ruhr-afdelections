@@ -2,8 +2,8 @@
   "map": {
     "geoFile": "lwk_nrw.simplified.topo.json",
     "topoLayerName": "lwk_nrw",
-    "colors": ["#c6dbef", "#ededed", "#4292c6", "#2171b5", "#084594"],
-    "steps": ["<5", "5-10", ">10", ">12", ">14"],
+    "colors": ["#abdda4", "#bdd7e7", "#6baed6", "#3182bd", "#fdae61", "#f46d43", "#d53e4f"],
+    "steps": ["<5", ">5", ">6.7", ">8.3", ">10", ">12.3", ">14.6"],
     "width": 700,
     "height": 690
   }

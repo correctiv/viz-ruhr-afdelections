@@ -6,6 +6,7 @@ import './election-result.tag'
 
   <div if={ feature } class="nrwelmaps__infobox">
     <h3 class="nrwelmaps__infobox-title">{ feature.data.n }</h3>
+    <span class="nrwelmaps__infobox__annotation { nrwelmaps__infobox__annotation--visible: feature.data.n12 }">(2012: { feature.data.n12 })</span>
     <dl>
       <dt>{ feature.data.afd }&nbsp;%</dt>
       <dd>Wahlergebnis AfD</dd>
@@ -17,10 +18,6 @@ import './election-result.tag'
 
     <election-result data={ feature.data } year="2017" />
     <election-result data={ feature.data } year="2012" />
-
-    <span if={ feature.data.n12 } class="nrwelmaps__infobox__annotation">
-      Dieser Wahlkreis hieß 2012: { feature.data.n12 }
-    </span>
 
     <button class="btn nrwelmaps__infobox__close-btn"
       onclick={ close }>x</button>

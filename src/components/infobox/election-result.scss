@@ -9,6 +9,10 @@
     max-width: 80%;
   }
 
+  @include bp-sm {
+    padding-top: 10px;
+  }
+
   &.--y2012 {
     padding-top: 10px;
   }
@@ -58,4 +62,35 @@
     }
   }
 
+  &__legend {
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+
+    @include bp-xs {
+      margin-top: 0px;
+    }
+
+    &-item {
+      display: block;
+      font-size: 12px;
+      line-height: 10px;
+      color: $gray-dark;
+      font-style: italic;
+      padding-right: 10px;
+
+      @include bp-xs {
+        display: inline;
+        padding-right: 3px;
+      }
+
+      &-square {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        opacity: .8;
+      }
+    }
+  }
 }
