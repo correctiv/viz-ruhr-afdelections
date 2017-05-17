@@ -33,7 +33,7 @@ dist/styles/bundle.css
     </section>
   </div>
   <div class="figure__credits">
-    <p><strong>Daten:</strong> <a href="https://www.wahlergebnisse.nrw.de/landtagswahlen/2017/index.shtml">Der Landeswahlleiter LKA Nordrhein-Westfalen.</a></p>
+    <p><strong>Daten:</strong> <a href="https://www.wahlergebnisse.nrw.de/landtagswahlen/2017/index.shtml">Der Landeswahlleiter / Innenministerium Nordrhein-Westfalen.</a></p>
   </div>
 </figure>
 ```
